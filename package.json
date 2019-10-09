@@ -1,11 +1,15 @@
 {
-  "name": "popup",
-  "version": "1.0.0",
-  "description": "原生js移动端提示弹框",
-  "main": "index.js",
-  "scripts": {
-    "test": "dev"
-  },
-  "author": "FlownChao",
-  "license": "ISC"
+    "name": "fl-popup",
+    "version": "1.0.1",
+    "description": "原生js移动端提示弹框",
+    "main": "index.js",
+    "scripts": {
+        "test": "dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/FlownChao/fl-popup"
+    },
+    "author": "FlownChao",
+    "license": "ISC"
 }
