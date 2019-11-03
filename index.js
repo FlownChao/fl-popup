@@ -13,12 +13,13 @@ class popup {
         //     button: '确定',
         //     callback: func
         // }
+        this.dismiss();
         let node = document.createElement('div');
         node.innerHTML = `<div class="fl-popup-toast">${data.content?data.content:data}</div>`
         node.setAttribute("id", this.id);
         node.setAttribute("class", 'fl-popup');
         document.body.insertBefore(node, document.body.lastElementChild);
-        setInterval(() => {
+        setTimeout(() => {
             this.dismiss();
         }, data.time ? data.time : 3000)
     }
@@ -31,6 +32,7 @@ class popup {
         //     button: '确定',
         //     callback: func
         // }
+        this.dismiss();
         let node = document.createElement('div');
         node.innerHTML = `<div class="fl-popup-box">${data.title?'<div class="popup-title">'+data.title+'</div>':''}<div class="popup-content">${data.content}</div><div class="popup-bottom"><div class="popup-btn">${data.button}</div></div></div><div class="popup-mask"></div>`
         node.setAttribute("id", this.id);
@@ -49,8 +51,9 @@ class popup {
         //     button: ['',''],
         //     callback: [func,func]
         // }
+        this.dismiss();
         let node = document.createElement('div');
-        node.innerHTML = `<div class="fl-popup-box">${data.title?'<div class="popup-title">'+data.title+'</div>':''}<div class="popup-content">${data.content}</div><div class="popup-bottom"><div class="popup-btn" style="width:50%;border-right: 1px solid #DADADA;">${data.button[0]}</div><div class="popup-btn"  style="width:50%">${data.button[1]}</div></div></div><div class="popup-mask"></div>`
+        node.innerHTML = `<div class="fl-popup-box">${data.title?'<div class="popup-title">'+data.title+'</div>':''}<div class="popup-content">${data.content}</div><div class="popup-bottom"><div class="popup-btn" style="width:50%;border-right: 1px solid #DADADA;color:#999">${data.button[0]}</div><div class="popup-btn"  style="width:50%;color:#ec3629">${data.button[1]}</div></div></div><div class="popup-mask"></div>`
         node.setAttribute("id", this.id);
         node.setAttribute("class", 'fl-popup');
         node.getElementsByClassName("popup-btn")[0].onclick = () => {
