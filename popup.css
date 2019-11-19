@@ -24,25 +24,25 @@
       z-index: 1002;
       background-color: #fff;
       text-align: center;
-      border-radius: 1rem;
-      font-size: 1.8rem;
+      border-radius: 10px;
+      font-size: 1.8px;
   }
 
   .fl-popup .popup-title {
       border-bottom: 1px solid #DADADA;
-      padding: 1rem 0 .75rem 0;
+      padding: 10px 0 75px 0;
       font-weight: 600;
   }
 
   .fl-popup .popup-content {
-      padding: 1.5rem;
+      padding: 15px;
       border-bottom: 1px solid #DADADA;
       color: #323232;
   }
 
   .fl-popup .popup-btn {
       color: #B80217;
-      padding: 1rem 0 .75rem 0;
+      padding: 10px 0 7.5px 0;
       float: left;
       width: 100%;
   }
